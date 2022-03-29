@@ -1,2 +1,2 @@
 # UBAgenda
-Application android (EDT) pour l'université de Bourgogne
+Application android (EDT) pour l'université de Bourgogne (JAVA)
