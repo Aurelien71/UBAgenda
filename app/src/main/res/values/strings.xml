@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">UBAgenda</string>
+    <string name="btScan">SCANNEZ UN QR CODE</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="tvNom">Nom</string>
+    <string name="tvDate">Date</string>
+    <string name="tvHeure">Heure</string>
+    <string name="btSave">Sauvegarder</string>
+    <string name="menuAide">Aide</string>
+    <string name="menuScanner">Scanner un autre QR Code</string>
+    <string name="tvLun">Lun</string>
+    <string name="tvMar">Mar</string>
+    <string name="tvMer">Mer</string>
+    <string name="tvJeu">Jeu</string>
+    <string name="tvVen">Ven</string>
+    <string name="tvSam">Sam</string>
+    <string name="tvDim">Dim</string>
+    <string name="tvAidCalendar">Permet de choisir une date</string>
+    <string name="tvAideQr">Permet de changer d\'agenda avec un autre QR Code</string>
+    <string name="tvInfo">Cours du</string>
+    <string name="tvTitreInfo">Information :</string>
+    <string name="tvRefresh">Permet de rafraîchir l\'application</string>
+    <string name="tvVide">Aucun événement</string>
+
+</resources>

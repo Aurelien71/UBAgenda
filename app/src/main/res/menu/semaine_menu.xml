@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/btRefresh"
+        android:icon="@drawable/ic_refresh"
+        android:title="refresh"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/qrChange"
+        android:icon="@drawable/ic_qr"
+        android:title="@string/menuScanner"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/selecDate"
+        android:icon="@drawable/ic_calendar"
+        android:title="Return"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/helpButton"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_help"
+        android:title="@string/menuAide" />
+
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#00EE9049"
+    tools:context=".MainActivity">
+
+ <ImageView
+     android:id="@+id/ivLogo"
+     android:layout_width="325dp"
+     android:layout_height="199dp"
+     android:layout_alignParentStart="true"
+     android:layout_alignParentEnd="true"
+     android:layout_marginStart="43dp"
+     android:layout_marginTop="20dp"
+     android:layout_marginEnd="43dp"
+     android:maxWidth="1sp"
+     android:minWidth="1sp"
+     app:srcCompat="@drawable/logo_ub_png_orange_filet_2019" />
+
+ <Button
+     android:id="@+id/btScan"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerInParent="true"
+     android:backgroundTint="@color/orange"
+     android:text="@string/btScan"
+     android:textColor="#FFFFFF"
+     android:textSize="30sp" />
+
+</RelativeLayout>

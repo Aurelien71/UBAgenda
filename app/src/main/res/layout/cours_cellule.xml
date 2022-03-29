@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/forme_cellule"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvCellCoursHeure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="5dp"
+        android:gravity="left"
+        android:text="Heure"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvCellCoursMatiere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="left"
+        android:text="Matiere"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:paddingBottom="5dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCellCoursSalleProf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="left"
+        android:text="SalleProf"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:paddingBottom="4dp"/>
+
+
+</LinearLayout>
