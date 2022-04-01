@@ -1,5 +1,6 @@
 package com.example.ubagenda.Util;
 
+import android.content.Intent;
 import android.os.Build;
 import android.util.Log;
 
@@ -16,6 +17,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -31,6 +33,7 @@ public class RecupICal {
      * @param resultat URL renvoyé par le QR Code
      * @return Tout les cours dans une collection (ArrayList)
      */
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public static ArrayList<Cours> getICalendar(String resultat) {
 
         ArrayList<Cours> lesCours = new ArrayList<>();
@@ -39,7 +42,10 @@ public class RecupICal {
         String MM;
         String dd;
         String HH;
+        int HHint;
         String mm;
+
+
 
 
 
@@ -73,6 +79,19 @@ public class RecupICal {
                             MM = value.substring(4,6);
                             dd = value.substring(6,8);
                             HH = value.substring(9,11);
+                            HHint = Integer.parseInt(HH)+2;
+                            if (HHint <= 9){
+
+                                HH = "0"+HHint;
+
+                            } else {
+
+                                HH = ""+HHint;
+
+                            }
+
+
+
                             mm = value.substring(11,13);
                             value = dd+"-"+MM+"-"+yyyy+"-"+HH+"-"+mm;
                             unCours.setDateDebut(value);
@@ -84,6 +103,16 @@ public class RecupICal {
                             MM = value.substring(4,6);
                             dd = value.substring(6,8);
                             HH = value.substring(9,11);
+                            HHint = Integer.parseInt(HH)+2;
+                            if (HHint <= 9){
+
+                                HH = "0"+HHint;
+
+                            } else {
+
+                                HH = ""+HHint;
+
+                            }
                             mm = value.substring(11,13);
                             value = dd+"-"+MM+"-"+yyyy+"-"+HH+"-"+mm;
                             unCours.setDateFin(value);
